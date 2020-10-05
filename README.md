@@ -5,7 +5,7 @@ pkglynx
 
 
 
-[![R-check](https://github.com/sckott/pkglynx/workflows/R-check/badge.svg)](https://github.com/sckott/pkglynx/actions?query=workflow%3AR-check)
+[![R-CMD-check](https://github.com/sckott/pkglynx/workflows/R-CMD-check/badge.svg)](https://github.com/sckott/pkglynx/actions?query=workflow%3AR-CMD-check)
 
 
 pkglynx: Check Package URLs
