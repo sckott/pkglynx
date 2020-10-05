@@ -1,0 +1,46 @@
+pkglynx
+=======
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+
+
+[![R-check](https://github.com/sckott/pkglynx/workflows/R-check/badge.svg)](https://github.com/sckott/pkglynx/actions?query=workflow%3AR-check)
+
+
+pkglynx: Check Package URLs
+
+use case: CRAN checks urls in your R package on submission, see https://cran.r-project.org/web/packages/URL_checks.html
+
+I think this is not a role CRAN should play. But it's still nice to have working URLs in package documentation. 
+
+`pkglynx` is an R package specific URL checker.
+
+## Installation
+
+``` r
+remotes::install_github("sckott/pkglynx")
+```
+
+## Use
+
+
+```r
+library(pkglynx)
+lynx("path to some package")
+# OR
+lynx() # the current working dir
+```
+
+or on the command line
+
+```
+Rscript -e "pkglynx::lynx()"
+```
+
+## Meta
+
+* Please [report any issues or bugs](https://github.com/sckott/pkglynx/issues).
+* License: MIT
+* Get citation information for `pkglynx` in R doing `citation(package = 'pkglynx')`
+* Please note that the pkglynx project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
