@@ -13,11 +13,15 @@ lynx_report <- function(x, all_urls, urls) {
   rep <- prep_report(x, all_urls, urls)
   cli::cat_rule(" lynx report", line = 2, line_col = "blue", width = 30)
   if (NROW(rep) == 0) {
-    cli::cat_line(crayon::style(cli::symbol$tick, "blue"),
-      "  No bad URLs found")
+    cli::cat_line(
+      crayon::style(cli::symbol$tick, "blue"),
+      "  No bad URLs found"
+    )
   } else {
-    cli::cat_line(crayon::style(cli::symbol$circle_cross, "orange"),
-      "  Bad URLs found; check these (status code: URL)")
+    cli::cat_line(
+      crayon::style(cli::symbol$circle_cross, "orange"),
+      "  Bad URLs found; check these (status code: URL)"
+    )
     bad_byfiles <- split(rep, rep$file)
     for (i in seq_along(bad_byfiles)) {
       cli::cat_line(crayon::style(names(bad_byfiles)[i], "purple"))
@@ -25,7 +29,10 @@ lynx_report <- function(x, all_urls, urls) {
       for (j in seq_len(NROW(bad_byfiles[[i]]))) {
         cli::cat_line(
           paste(bad_byfiles[[i]]$code[j],
-            bad_byfiles[[i]]$url[j], sep = ": "))
+            bad_byfiles[[i]]$url[j],
+            sep = ": "
+          )
+        )
       }
       cli::cat_line("\n")
     }
