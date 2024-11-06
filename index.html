@@ -59,7 +59,7 @@
 <div class="page-header"><h1 id="pkglynx">pkglynx<a class="anchor" aria-label="anchor" href="#pkglynx"></a>
 </h1></div>
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-<p><a href="https://github.com/sckott/pkglynx/actions?query=workflow%3AR-CMD-check" class="external-link"><img src="https://github.com/sckott/pkglynx/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></p>
+<p><a href="https://github.com/sckott/pkglynx/actions/workflows/R-check.yml" class="external-link"><img src="https://github.com/sckott/pkglynx/actions/workflows/R-check.yml/badge.svg" alt="R-CMD-check"></a></p>
 <p>pkglynx: Check Package URLs</p>
 <p><strong>Why?</strong> CRAN maintainers check urls in your R package on submission, see <a href="https://cran.r-project.org/web/packages/URL_checks.html" class="external-link uri">https://cran.r-project.org/web/packages/URL_checks.html</a> - I don’t think submissions should be held up by bad URLs in documentation when there can e.g., be a critical bug fix waiting to be deployed. Other package registries don’t do this. I think URL checking docs is not a role CRAN should play. But it’s still nice to have working URLs in package documentation.</p>
 <p><code>pkglynx</code> is an R package specific URL checker.</p>
@@ -67,7 +67,7 @@
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"sckott/pkglynx"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"sckott/pkglynx"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="use">Use<a class="anchor" aria-label="anchor" href="#use"></a>
@@ -86,8 +86,6 @@
 <ul>
 <li>Please <a href="https://github.com/sckott/pkglynx/issues" class="external-link">report any issues or bugs</a>.</li>
 <li>License: MIT</li>
-<li>Get citation information for <code>pkglynx</code> in R doing <code>citation(package = 'pkglynx')</code>
-</li>
 <li>Please note that the pkglynx project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</li>
 </ul>
 </div>
