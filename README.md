@@ -5,7 +5,7 @@ pkglynx
 
 
 
-[![R-CMD-check](https://github.com/sckott/pkglynx/workflows/R-CMD-check/badge.svg)](https://github.com/sckott/pkglynx/actions?query=workflow%3AR-CMD-check)
+[![R-CMD-check](https://github.com/sckott/pkglynx/actions/workflows/R-check.yml/badge.svg)](https://github.com/sckott/pkglynx/actions/workflows/R-check.yml)
 
 
 pkglynx: Check Package URLs
@@ -16,14 +16,14 @@ __Why?__ CRAN maintainers check urls in your R package on submission, see https:
 
 ## Installation
 
-``` r
-remotes::install_github("sckott/pkglynx")
+```r
+pak::pak("sckott/pkglynx")
 ```
 
 ## Use
 
 
-```r
+``` r
 library(pkglynx)
 lynx("path to some package")
 # OR
@@ -40,5 +40,4 @@ Rscript -e "pkglynx::lynx()"
 
 * Please [report any issues or bugs](https://github.com/sckott/pkglynx/issues).
 * License: MIT
-* Get citation information for `pkglynx` in R doing `citation(package = 'pkglynx')`
 * Please note that the pkglynx project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
