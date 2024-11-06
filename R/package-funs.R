@@ -11,6 +11,9 @@ load_pkg <- function(path = ".") {
   desc$path <- path
   structure(desc, class = "pkg")
 }
+#' @keywords internal
 as.pkg <- function(x) UseMethod("as.pkg")
+#' @keywords internal
 as.pkg.pkg <- function(x) x
+#' @keywords internal
 as.pkg.character <- function(x) load_pkg(x)

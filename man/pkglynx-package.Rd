@@ -2,12 +2,14 @@
 % Please edit documentation in R/pkglynx-package.R
 \docType{package}
 \name{pkglynx-package}
-\alias{pkglynx-package}
 \alias{pkglynx}
-\title{pkglynx}
+\alias{pkglynx-package}
+\title{pkglynx: Check Package URLs}
 \description{
-Check package links.
+Check Package URLs.
 }
 \author{
-Scott Chamberlain
+\strong{Maintainer}: Scott Chamberlain \email{myrmecocystus@gmail.com} (\href{https://orcid.org/0000-0003-1444-9135}{ORCID})
+
 }
+\keyword{internal}
